@@ -36,7 +36,7 @@ export default function Home({posts}) {
   const [weather, setWeather] = useState();
   const [errorMessage, setErrorMessage] = useState('');
 
-  var weatherApiKey = process.env.WEATHER_API_KEY;
+  var weatherApiKey = "4551243115444ba0a100a9567cd1b61d";
   var weatherLang = "en";
   var weatherUnits = "metric";
   const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=${weatherUnits}&appid=${weatherApiKey}&lang=${weatherLang}`
@@ -405,7 +405,7 @@ export default function Home({posts}) {
             <SaveBtn handleSave={handleSave}/>
           </form>
         </div>
-       
+
       </main>
       <Footer />
     </div>
